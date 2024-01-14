@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:id="@+id/dec2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="86dp"
+        android:text="Decision Hub" />
+
+    <EditText
+        android:id="@+id/crulename"
+        android:layout_width="282dp"
+        android:height="48dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dec2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/bgctable"
+        android:hint="Change Rule Name"
+        android:padding="5dp"
+        android:textSize="25dp" />
+    <EditText
+        android:id="@+id/cruledes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/crulename"
+        android:hint="Change Rule Description"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:height="48dp"
+        android:textSize="25dp"
+        android:background="@color/bgctable"
+        android:padding="5dp"/>
+
+    <EditText
+        android:id="@+id/crulecon"
+        android:layout_width="290dp"
+        android:height="48dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cruledes"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/bgctable"
+        android:hint="Change Rule Conditions"
+        android:padding="5dp"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/submit1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/crulecon"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal"
+        android:text="Submit"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/back1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submit1"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="154dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:text="Back"
+        android:textAlignment="center" />
+
+</RelativeLayout>

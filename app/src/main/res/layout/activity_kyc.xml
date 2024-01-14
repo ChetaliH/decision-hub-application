@@ -1,0 +1,97 @@
+<!-- res/layout/activity_kyc.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".KYC">
+
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age:"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewAge"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Age"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/textViewPan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pan Number:"
+        android:layout_below="@id/editTextAge"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextPan"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewPan"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Pan Number"
+        android:inputType="text"/>
+
+    <TextView
+        android:id="@+id/textViewCibil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CIBIL Score:"
+        android:layout_below="@id/editTextPan"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextCibil"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewCibil"
+        android:layout_marginTop="8dp"
+        android:hint="Enter CIBIL Score"
+        android:inputType="number"/>
+
+    <TextView
+        android:id="@+id/textViewNationality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nationality:"
+        android:layout_below="@id/editTextCibil"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextNationality"
+
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewNationality"
+        android:layout_marginTop="8dp"
+        android:hint="Enter Nationality"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/buttonUpdateKYC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextNationality"
+        android:layout_marginTop="16dp"
+        android:text="Update KYC"/>
+
+    <Button
+        android:id="@+id/back6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonUpdateKYC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="Back" />
+
+</RelativeLayout>
