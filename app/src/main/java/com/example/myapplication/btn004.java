@@ -1,4 +1,4 @@
-package com.example.decisionhub2;
+package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
-
-import com.example.myapplication.R;
 
 public class btn004 extends AppCompatActivity {
     EditText fullAmt,no_of_days_1,no_of_days_2,outstandingAmount;
@@ -51,8 +49,7 @@ public class btn004 extends AppCompatActivity {
                 int numberOfDays2 = Integer.parseInt(no_of_days_2.getText().toString());
                 double outstandingAmt = Double.parseDouble(outstandingAmount.getText().toString());
 
-                double interestRate = ((outstandingAmt - fullAmount) / fullAmount) * (365.0 / (numberOfDays1 + numberOfDays2));
-
+                double interestRate = (numberOfDays1*outstandingAmt*3*12)/365;
 
                 resultTextView.setText(String.format("Interest Rate: %.2f%%", interestRate * 100));
             }catch (NumberFormatException e) {

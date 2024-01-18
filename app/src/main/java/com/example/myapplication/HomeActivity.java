@@ -1,4 +1,4 @@
-package com.example.decisionhub2;
+package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,8 +6,6 @@ import android.content.Intent;
 import android.view.View;
 import android.widget.Button;
 import android.os.Bundle;
-
-import com.example.myapplication.R;
 
 public class HomeActivity extends AppCompatActivity {
     Button btn1,test,btn2,btn3,btn4,kyc;

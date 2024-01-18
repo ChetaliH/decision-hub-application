@@ -1,4 +1,4 @@
-package com.example.decisionhub2;
+package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,8 +9,6 @@ import android.widget.Button;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.Toast;
-
-import com.example.myapplication.R;
 
 public class MainActivity extends AppCompatActivity {
     EditText username,password;

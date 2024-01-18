@@ -1,4 +1,4 @@
-package com.example.decisionhub2;
+package com.example.myapplication;
 
 import org.junit.Test;
 
